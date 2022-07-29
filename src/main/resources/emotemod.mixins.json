@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.Lengthrequired.emotemod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EmoteModChatMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

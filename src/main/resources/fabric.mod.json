@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "emotemod",
+  "version": "${version}",
+
+  "name": "Emote Mod",
+  "description": "Mod to draw emote inside your chat/GUI",
+  "authors": [
+    "LengthRequired"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.Lengthrequired.emotemod.Emotemod"
+    ],
+    "client": [
+      "net.Lengthrequired.emotemod.EmotemodClient"
+    ]
+  },
+  "mixins": [
+    "emotemod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
